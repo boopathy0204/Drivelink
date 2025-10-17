@@ -1,4 +1,4 @@
-.login{
+.login,.personal_details{
     background-color: aliceblue;
     border-width:2px;
     padding:30px;
@@ -10,8 +10,14 @@
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.login input{
+.value{
+    text-align: left;
+}
+
+ input ,select,textarea{
     margin-bottom: 20px;
+    font-style: normal;
+    outline-color:rgb(107, 161, 24);
 }
 .login_button{
     background-color: rgb(195, 255, 104);
