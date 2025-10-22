@@ -1,0 +1,30 @@
+.login,.personal_details{
+    background-color: aliceblue;
+    border-width:2px;
+    padding:30px;
+    border-style: solid;
+    border-color:black;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.value{
+    text-align: left;
+}
+
+ input ,select,textarea{
+    margin-bottom: 20px;
+    font-style: normal;
+    outline-color:rgb(107, 161, 24);
+}
+.login_button{
+    background-color: rgb(195, 255, 104);
+}
+table label{
+    display: inline-block;
+    text-align: right;
+    margin-bottom:20px;
+    width:100%;
+}
