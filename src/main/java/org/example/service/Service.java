@@ -4,15 +4,19 @@ import org.example.model.Login;
 import org.example.repository.Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.swing.text.html.Option;
 
+@org.springframework.stereotype.Service
 public class Service {
     @Autowired
     private Repository repository;
     public String ByEmail(Login login){
-        boolean exists= repository.existsByEmail(login.getEmail());
-        if(exists) return "Get out";
-        repository.save(login);
-        return "save";
+         Login exists= repository.findByEmail(login.getEmail());
+        if(exists == null) return "user doesn't exists";
+        if (exists.getPassword().equals(login.getPassword())) {
+            return "Login successfully";
+        }
+        return "Wrong Password";
     }
 
 }
