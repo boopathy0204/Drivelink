@@ -1,9 +1,10 @@
 .login,.personal_details{
-    background-color: aliceblue;
-    border-width:2px;
+    /*background-color: rgb(63, 72, 232);
+     border-width:2px;
     padding:30px;
     border-style: solid;
-    border-color:black;
+    border-color:rgb(247, 243, 243); */
+    color: white;
     position:absolute;
     left:50%;
     top:50%;
@@ -17,6 +18,7 @@
  input ,select,textarea{
     margin-bottom: 20px;
     font-style: normal;
+    padding: 5px;
     outline-color:rgb(107, 161, 24);
 }
 .login_button{
@@ -27,4 +29,11 @@ table label{
     text-align: right;
     margin-bottom:20px;
     width:100%;
+}
+body{
+    background-image: url("image/Gemini_Generated_Image_jso4orjso4orjso4.png");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center; 
+    height: 100vh; 
 }
