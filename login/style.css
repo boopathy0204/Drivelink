@@ -37,3 +37,10 @@ body{
     background-position: center; 
     height: 100vh; 
 }
+table{
+    padding: 20px;
+    width: 330px;
+}
+td{
+    width:fit-content;
+}

@@ -5,18 +5,18 @@
 <body>
     <div class ="login">
     <h2>Login</h2>
+    <p id="result"  style="color: red;"></p>
         <table>
             <tr>
             <td><label for="email">Email :</label></td>
-            <td><input id ="email" type="email" name ="email" placeholder="email_id"></td>
+            <td><input id ="email" type="email" name ="email" placeholder="email_id" required></td>
             </tr>
             <tr>
                 <td><label for ="password">Password :</label></td>
-                <td><input id="password" type="password" name ="password" placeholder="password"></td>
+                <td><input id="password" type="password" name ="password" placeholder="password" required></td>
             </tr>
         </table>
-    <button onclick="login()">Login</button>
-    <p id="result"  style="color: red;"></p>
+        <button onclick="login()" type="submit">Login </button>
 </div>
 <script src="script.js"></script>
 </body>
